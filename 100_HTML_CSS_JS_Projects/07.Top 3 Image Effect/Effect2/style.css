@@ -1,0 +1,54 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.5s;
+    background: rgb(23, 23, 23);
+    transform: translateY(100%);
+}
+
+img {
+    position: absolute;
+    top: 0;
+    /* Ensures the image starts from the top of its container */
+    left: 0;
+    /* Ensures the image starts from the left of its container */
+    width: 100%;
+    /* Makes the image width 100% of its container */
+    height: 110%;
+    /* Preserves aspect ratio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container:hover .content {
+    transform: translateY(0);
+}
+
+.container:hover img {
+    transform: translateY(-30%);
+    transition: transform 0.8s ease;
+}
