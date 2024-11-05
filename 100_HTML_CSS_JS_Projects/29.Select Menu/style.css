@@ -1,0 +1,82 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#0093E9, #80D0C7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selector {
+    width: 350px;
+}
+
+#selectField {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#selectField>img {
+    width: 12px;
+    transition: transform 0.5s;
+}
+
+#list {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.options:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.options:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+.options>img {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.changed {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.changed>img {
+    width: 30px;
+    margin-right: 20px;
+}

@@ -1,0 +1,26 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    background: #ccc;
+}
+
+#emodji {
+    font-size: 10rem;
+    filter: grayscale(1);
+    transition: transform, filter 400ms;
+    cursor: pointer;
+}
+
+#emodji:hover {
+    filter: grayscale(0);
+    transform: scale(1.5);
+}
